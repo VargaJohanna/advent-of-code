@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AdventOfCode.iml" filepath="$PROJECT_DIR$/.idea/modules/AdventOfCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/advent.iml" filepath="$PROJECT_DIR$/.idea/modules/advent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/advent_main.iml" filepath="$PROJECT_DIR$/.idea/modules/advent_main.iml" group="advent" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/advent_test.iml" filepath="$PROJECT_DIR$/.idea/modules/advent_test.iml" group="advent" />
+    </modules>
+  </component>
+</project>
