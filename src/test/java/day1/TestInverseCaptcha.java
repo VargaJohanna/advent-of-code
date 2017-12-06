@@ -1,3 +1,6 @@
+package day1;
+
+import day1.InverseCaptcha;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
