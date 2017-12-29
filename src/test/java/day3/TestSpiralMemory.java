@@ -10,11 +10,6 @@ import static org.junit.Assert.assertEquals;
 public class TestSpiralMemory {
     SpiralMemory spiralMemory = new SpiralMemory();
 
-//    @Test
-//    public void testInput0() {
-//        assertEquals(0, spiralMemory.findDistance(1));
-//    }
-
     @Test
     public void testInput1() {
        assertEquals(3, spiralMemory.findDistance(12));

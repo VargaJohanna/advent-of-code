@@ -11,12 +11,12 @@ public class Passphrases {
         int numOfValidPhrase = 0;
         for (String phraseLine : input.split("\\n")) {
             int repeatedWords = 0;
-            ArrayList<String> listOfPhrases = new ArrayList<>();
-            Collections.addAll(listOfPhrases, phraseLine.split(" "));
+            ArrayList<String> listOfWords = new ArrayList<>();
+            Collections.addAll(listOfWords, phraseLine.split(" "));
 
-            for(int i = 0; i < listOfPhrases.size(); i++) {
-                for(int j = i + 1; j < listOfPhrases.size(); j++ ) {
-                    if(listOfPhrases.get(i).equals(listOfPhrases.get(j))) {
+            for(int i = 0; i < listOfWords.size(); i++) {
+                for(int j = i + 1; j < listOfWords.size(); j++ ) {
+                    if(listOfWords.get(i).equals(listOfWords.get(j))) {
                         repeatedWords++;
                     }
                 }
