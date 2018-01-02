@@ -39,7 +39,6 @@ public class SpiralMemory {
         for(int i = numOfSquare - 1; i > 0; i--) {
             multiplyEightBy += i;
         }
-        System.out.println("multiplyEightBy " + multiplyEightBy);
         int axisRight = 1 + numOfSquare * 1 + multiplyEightBy * 8;
         int axisUp = 1 + numOfSquare * 3 + multiplyEightBy * 8;
         int axisLeft = 1 + numOfSquare * 5 + multiplyEightBy * 8;
