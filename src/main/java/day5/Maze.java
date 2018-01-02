@@ -7,8 +7,32 @@ import java.util.ArrayList;
  */
 public class Maze {
     ArrayList<Integer> listOfOffsets = new ArrayList<>();
-    public int countStepsToEscapeMaze(String input) {
 
+    public int countStepsToEscapeMaze(String input) {
+        setListOfOffsets(input);
+
+        int counter = 0;
+        int index = 0;
+        int offset;
+
+        while(index < getListOfOffsets().size()) {
+            counter++;
+            offset = getOffsetAndIncrease(index);
+            if(offset != 0) {
+                index = index + offset;
+            }
+        }
+        return counter;
+    }
+
+    public int getOffsetAndIncrease(int index) {
+        int originalValue = getListOfOffsets().get(index);
+        getListOfOffsets().set(index, originalValue + 1);
+
+        return originalValue;
+    }
+
+    public void setListOfOffsets(String input) {
         for(String line : input.split("\\n")) {
             int offSet;
             if(line.substring(0, 1).equals("-")) {
@@ -18,26 +42,9 @@ public class Maze {
             }
             listOfOffsets.add(offSet);
         }
-
-        int counter = 0;
-        int index = 0;
-        int offset;
-
-        while(index < listOfOffsets.size()) {
-            counter++;
-            offset = getOffsetAndIncrease(index);
-            if(offset != 0) {
-                index = index + offset;
-            }
-        }
-
-        return counter;
-
     }
-    public int getOffsetAndIncrease(int index) {
-        int originalValue = listOfOffsets.get(index);
-        listOfOffsets.set(index, originalValue + 1);
 
-        return originalValue;
+    public ArrayList<Integer> getListOfOffsets() {
+        return listOfOffsets;
     }
 }
