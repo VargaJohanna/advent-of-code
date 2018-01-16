@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class MemoryReallocation {
 
-    public int reallocation(String input) {
+    public int reallocate(String input) {
         ArrayList<Integer> banks = new ArrayList<>();
 
         for(String num : input.split("\\t")) {
